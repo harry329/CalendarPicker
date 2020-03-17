@@ -398,6 +398,7 @@ export default class CalendarPicker extends Component {
             headingLevel={headingLevel}
             previousTitleStyle={previousTitleStyle}
             nextTitleStyle={nextTitleStyle}
+            headerText = {this.state.selectedStartDate ? this.state.selectedStartDate.toLocaleString() : '' }
           />
           <Weekdays
             styles={styles}
