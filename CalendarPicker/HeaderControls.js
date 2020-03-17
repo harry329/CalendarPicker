@@ -32,6 +32,7 @@ export default function HeaderControls(props) {
     headingLevel,
     previousTitleStyle,
     nextTitleStyle,
+    headerText,
   } = props;
   const MONTHS = months? months : Utils.MONTHS; // English Month Array
   // getMonth() call below will return the month number, we will use it as the
@@ -60,7 +61,7 @@ export default function HeaderControls(props) {
       />
       <View>
         <Text style={[styles.monthLabel, textStyle]} {...accessibilityProps}>
-           { month } { year }
+           { month } { year } {headerText}
         </Text>
       </View>
       <Controls
